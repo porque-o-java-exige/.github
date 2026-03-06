@@ -1,13 +1,11 @@
-
-
-#  porque-o-java-exige
+# 📚 Porque-o-java-exige
 
 Bem-vindo à organização **porque-o-java-exige**!  
 Aqui reunimos projetos acadêmicos e colaborativos que exploram o ecossistema Java e outras tecnologias, sempre com foco em aprendizado, boas práticas e código de qualidade.
 
 ---
 
-#  Guia Essencial de Git: Conceitos e Padrões
+# 📘 Guia Essencial de Git: Conceitos e Padrões
 
 Este é um resumo dos conceitos e padrões de nomenclatura para **Commit**, **Branch** e **Pull Request (PR)**, visando um histórico de código claro e colaborativo.  
 
@@ -17,7 +15,7 @@ Mais detalhes:
 
 ---
 
-##  1. Os 3 Pilares do Git
+## 1️⃣ Os 3 Pilares do Git
 
 | Conceito | Emoji | Definição |
 | :--- | :--- | :--- |
@@ -29,24 +27,20 @@ Mais detalhes:
 
 ---
 
-##  2. Fork: O Repositório Pessoal
-
-Quando você não tem permissão de escrita direta no repositório principal, é necessário criar um **Fork**.
+## 2️⃣ Fork: O Repositório Pessoal
 
 - **O que é um Fork?** Uma cópia independente do repositório original para a sua conta.  
 - **Propósito:** Permite alterar e testar sem afetar o projeto principal.  
 - **Fluxo:** Você forka, trabalha nas suas branches e, ao finalizar, abre um Pull Request do seu Fork para o repositório original.  
 
-###  Regra de Ouro para PRs
->  **Abra o Pull Request somente quando o trabalho estiver concluído e pronto para revisão.**
+### Regra de Ouro para PRs
+> **Abra o Pull Request somente quando o trabalho estiver concluído e pronto para revisão.**
 
 ---
 
-##  3. Padrões de Nomenclatura
+## 3️⃣ Padrões de Nomenclatura
 
-A padronização é crucial para automatizar ferramentas e entender o histórico rapidamente.
-
-###  Commits
+### Commits
 Formato: `tipo: descrição da mudança`  
 
 | Tipo | Emoji | Significado | Exemplo |
@@ -61,7 +55,7 @@ Formato: `tipo: descrição da mudança`
 
 ---
 
-###  Branches
+### Branches
 Formato: `tipo/nomeDaBranch` (camelCase).  
 
 | Tipo | Foco | Exemplo |
@@ -73,7 +67,7 @@ Formato: `tipo/nomeDaBranch` (camelCase).
 
 ---
 
-###  Pull Requests
+### Pull Requests
 Formato: `[TIPO] Nome Em Title Case`.  
 
 | Tipo | Foco | Exemplo |
@@ -84,9 +78,9 @@ Formato: `[TIPO] Nome Em Title Case`.
 
 ---
 
-##  4. Fluxo de Integração (Git Flow Básico)
+## 4️⃣ Fluxo de Integração (Git Flow Básico)
 
- **Regra de Ouro:** Nunca faça commit direto nas branches principais (`develop`, `production`).  
+**Regra de Ouro:** Nunca faça commit direto nas branches principais (`develop`, `production`).  
 
 ### 🔹 Branches de Trabalho
 - São **temporárias**, derivadas de `develop`.  
@@ -100,11 +94,9 @@ Formato: `[TIPO] Nome Em Title Case`.
 - Contém o código finalizado e pronto para deploy.  
 - Só recebe merge da `develop` quando validado.  
 
-###  Fluxo Visual
+### Fluxo Visual
 ```mermaid
 graph LR
     A[feat/minha-feature] --> B(Pull Request);
     B --> C(develop);
     C --> D(production);
-```
-
